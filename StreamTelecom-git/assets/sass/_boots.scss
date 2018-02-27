@@ -1,0 +1,18 @@
+/* BOOTSTRAP LAYOUT */
+.container-fluid {
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.row {
+   margin-left: -10px;
+   margin-right: -10px;
+
+   .column {
+      padding-right: 10px;
+      padding-left: 10px;
+   }
+}
+[class*="col-"] {
+   padding-right: 10px;
+   padding-left: 10px;
+}

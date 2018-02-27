@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Subscribe page</title>
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/spook.css"/>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+	<script src="assets/js/modernizr-custom.js" type="javascript"></script>
+</head>
+<body>
+
+<div class="container grid-xl">
+	<header>
+		<div class="logobox leftboxer">
+			<a href="#" class="logobox"><img src="images/logo-st-300x65.svg" alt="logo"></a>
+		</div>
+		<div class="userbox rightboxer">
+			<div class="phones">
+				<span>+7 (812) 123 45 67<dfn>Санкт-Петербург</dfn></span>
+				<span>8 (800) 123 45 67<dfn>Россия</dfn></span>
+			</div>
+			<div class="usermenu">
+				<span>
+					<img class="mbri-user" src="images/user.jpg" alt="user">
+					Константин
+				</span>
+				<i class="fa fa-angle-down"></i>
+			</div>
+			<div class="payinfo">
+				<span>10.00</span>
+				<i class="fa fa-rub"></i>
+			</div>
+			<div class="communion">
+				<span class="u-mess"></span>
+				<span class="u-bell"></span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="sidebox leftboxer">
+			<div class="sidebar">
+				<ul class="menu-links">
+					<li class="menu-link respond"><a href="#">Рассылки</a></li>
+					<li class="menu-link sms"><a href="#">СМС</a></li>
+					<li class="menu-link hlr"><a href="#">Проверка</a></li>
+					<li class="menu-link viber" ><a href="#">Viber</a></li>
+					<li class="menu-link inbox"><a href="#">Входящие</a></li>
+					<li class="menu-link mail"><a href="#">Эл.почта</a></li>
+					<li class="menu-link subscr active" ><a href="#">Подписки</a></li>
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul class="menu-links">
+					<li class="menu-link base"><a href="#">Базы номеров</a></li>
+					<li class="menu-link stat"><a href="#">Статистика</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mainbox rightboxer">
+			<div class="herobox hb-sform">
+				<h1>Формы подписки и отписки</h1>
+			</div>
+			<div class="contenido standardpage">
+				<h2>Помогите посетителям вашего сайта <br>подписаться и отписаться от рассылок</h2>
+				<p>Здесь мы сгенерируем код формы специально для вашего сайта и будем вести журнал подписок.</p>
+
+				<div class="whitebox">
+					<div class="accordion">
+						<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden checked>
+						<label class="accordion-header" for="accordion-1">
+							<i class="icon icon-arrow-down mr-1"></i>
+							<span>Ваш сайт</span>
+						</label>
+						<div class="accordion-body">
+							<div class="wrapper">
+								<div class="form-group">
+									<label class="form-label" for="sitename">Адрес вашего сайта</label>
+									<div class="columns col-gapless">
+										<div class="column col-6">
+											<input class="form-input" type="text" id="sitename" placeholder="https://streamtelecom.com">
+										</div>
+										<div class="column col-6">
+											<button class="btn btn-link i-preview">Предпросмотр формы</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div><!-- // .whitebox -->
+
+				<div class="whitebox">
+					<h2>
+						<button class="btn btn-link i-newdb">Создать новую базу</button>
+						База подписчиков
+					</h2>
+					<div class="wb-body">
+						<div class="wrapper">
+							<div class="tablo picker">
+								<div class="form-group">
+									<div class="rowbox">
+										<label class="form-label" for="item001">
+											<span>Какой-то длинный текст</span>
+											<dfn>2 000 номеров</dfn>
+										</label>
+										<label class="form-radio">
+											<input type="radio" name="radiogroup" id="item001">
+											<i class="form-icon"></i><var class="date">12 июн</var>
+										</label>
+									</div>
+									<div class="rowbox">
+										<label class="form-label" for="item002">
+											<span>Какой-то длинный текст</span>
+											<dfn>2 000 номеров</dfn>
+										</label>
+										<label class="form-radio">
+											<input type="radio" name="radiogroup" id="item002">
+											<i class="form-icon"></i><var class="date">12 июн</var>
+										</label>
+									</div>
+								</div>
+							</div>
+							<p><button class="btn btn-big">Посмотреть все базы</button></p>
+						</div>
+					</div>
+				</div><!-- // .whitebox -->
+
+				<div class="whitebox">
+					<h2>
+						Ваше имя для подписчиков
+					</h2>
+					<div class="wb-body">
+						<div class="wrapper">
+							<div class="form-group">
+								<label for="senderName">Имя отправителя</label>
+								<select class="form-select" id="senderName">
+									<option>Имя отправителя</option>
+									<option>Konstantin</option>
+									<option>John</option>
+									<option>Bob</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div><!-- // .whitebox -->
+				<button class="btn btn-yellow">Сгенерировать код для вставки на сайт</button>
+			</div>
+		</div>
+
+	</main>
+</div>
+
+<script src="assets/jquery/jquery-2.2.2.min.js"></script>
+<!--<script src="assets/bootstrap337/js/bootstrap.min.js"></script>-->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

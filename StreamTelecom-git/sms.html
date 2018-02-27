@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New SMS</title>
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/spook.css"/>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+	<script src="assets/js/modernizr-custom.js" type="javascript"></script>
+</head>
+<body>
+
+<div class="container grid-xl">
+	<header>
+		<div class="logobox leftboxer">
+			<a href="#" class="logobox"><img src="images/logo-st-300x65.svg" alt="logo"></a>
+		</div>
+		<div class="userbox rightboxer">
+			<div class="phones">
+				<span>+7 (812) 123 45 67<dfn>Санкт-Петербург</dfn></span>
+				<span>8 (800) 123 45 67<dfn>Россия</dfn></span>
+			</div>
+			<div class="usermenu">
+				<span>
+					<img class="mbri-user" src="images/user.jpg" alt="user">
+					Константин
+				</span>
+				<i class="fa fa-angle-down"></i>
+			</div>
+			<div class="payinfo">
+				<span>10.00</span>
+				<i class="fa fa-rub"></i>
+			</div>
+			<div class="communion">
+				<span class="u-mess"></span>
+				<span class="u-bell"></span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="sidebox leftboxer">
+			<div class="sidebar">
+				<ul class="menu-links">
+					<li class="menu-link respond"><a href="#">Рассылки</a></li>
+					<li class="menu-link sms active"><a href="#">СМС</a></li>
+					<li class="menu-link hlr"><a href="#">Проверка HLR</a></li>
+					<li class="menu-link viber" ><a href="#">Viber</a></li>
+					<li class="menu-link inbox"><a href="#">Входящие</a></li>
+					<li class="menu-link mail"><a href="#">Эл.почта</a></li>
+					<li class="menu-link subscr" ><a href="#">Подписки</a></li>
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul class="menu-links">
+					<li class="menu-link base"><a href="#">Базы номеров</a></li>
+					<li class="menu-link stat"><a href="#">Статистика</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mainbox rightboxer">
+			<div class="herobox hb-sms">
+				<h1>Новая СМС рассылка</h1>
+			</div>
+			<!--<div class="menu-plus">
+				<ul>
+					<li><a class="active" href="#">СМС</a></li>
+					<li><a href="#">Голосование</a></li>
+					<li><a href="#">Настройки номера</a></li>
+				</ul>
+			</div>-->
+			<div class="contenido standardpage">
+				<div class="whitebox nopb">
+					<h2>
+						<button class="btn btn-link i-newtmp">На основе шаблона</button>
+						Создайте сообщение
+					</h2>
+					<div class="wb-body">
+						<div class="wrapper">
+							<div class="form-group twocols">
+								<div class="twocols-column col-left">
+									<label class="form-label" for="input-001">Название рассылки <i class="fa fa-question-circle-o"></i></label>
+									<input class="form-input" type="text" id="input-001" placeholder="Например, поздравление с днем бухгалтера">
+									<cite>Можно ввести 255 символов</cite>
+								</div>
+								<div class="twocols-column col-right">
+									&nbsp;
+								</div>
+							</div>
+							<div class="form-group twocols">
+								<div class="twocols-column col-left">
+									<label class="form-label" for="senderName">Имя отправителя</label>
+									<select class="form-select" id="senderName">
+										<option>Имя отправителя</option>
+										<option>Konstantin</option>
+										<option>John</option>
+										<option>Bob</option>
+									</select>
+								</div>
+								<div class="twocols-column col-right">
+									&nbsp;
+								</div>
+							</div>
+							<div class="form-group twocols">
+								<div class="twocols-column col-left">
+									<label class="form-label" for="post">Сообщение</label>
+									<textarea class="form-input noresize" id="post" placeholder="Ваш текст" rows="6"></textarea>
+									<div class="textarea-tools">
+										<span>Символов <var class="value">0</var> (<var class="from">1</var>)</span>
+										<span><var class="rubs">7</var> за 1 номер</span>
+										<button class="btn btn-small">Транслировать</button>
+									</div>
+								</div>
+								<div class="twocols-column col-right">
+									<label class="form-label text-grey">Умные вставки <i class="fa fa-question-circle-o"></i></label>
+									<div class="incuts">
+										<var>[Имя]</var>
+										<var>[Фамилия]</var>
+										<var>[Отчество]</var>
+										<var>[Телефон]</var>
+										<var>[Пол]</var>
+										<var>[-ыя/-ая]</var>
+										<var>[Дата рождения]</var>
+										<var>[Примечание 1]</var>
+										<var>[Примечание 2]</var>
+										<var>[Примечание 3]</var>
+									</div>
+								</div>
+							</div>
+							<div class="st-panel fullwidth">
+								<h2>Дополнительные настройки <button class="btn btn-link clear">Раскрыть</button></h2>
+								<p>Рассылка по часам, к определённой дате, поздравления с днём рождения и другое.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="whitebox">
+					<h2>
+						<button class="btn btn-link i-newdb">Загрузить новую базу</button>
+						Выберите базу получателей <i class="fa fa-question-circle-o"></i>
+					</h2>
+					<div class="wb-body">
+						<div class="wrapper">
+							<div class="tablo picker five-cols -four">
+								<div class="form-group">
+									<div class="rowbox flexy">
+										<label class="form-checkbox">
+											<input type="checkbox" name="chb-01" id="item001">
+											<i class="form-icon"></i><var class="date">12 июн</var>
+										</label>
+										<label class="form-label two" for="item001">
+											<span>Какой-то длинный текст, какой-то длинный текст</span>
+										</label>
+										<label class="form-label three">
+											<span><var class="rubs text-grey">4 900</var></span>
+											<span class="text-grey">700 номеров</span>
+										</label>
+										<label class="form-label four">
+											<span class="">HLR-проверка за <var class="rubs">350</var></span>
+											<button class="btn btn-link clean">Проверить базу</button>
+										</label>
+									</div>
+									<div class="rowbox flexy">
+										<label class="form-checkbox">
+											<input type="checkbox" name="chb-01" id="item002">
+											<i class="form-icon"></i><var class="date">12 июн</var>
+										</label>
+										<label class="form-label two" for="item002">
+											<span>Какой-то длинный текст, какой-то длинный текст</span>
+										</label>
+										<label class="form-label three">
+											<span><var class="rubs">4 900</var></span>
+											<span class="">700 номеров</span>
+										</label>
+										<label class="form-label four bg-light">
+											<span class="">HLR-проверка за <var class="rubs">350</var></span>
+											<button class="btn btn-link clean">Проверить базу</button>
+										</label>
+									</div>
+								</div>
+							</div>
+							<p><button class="btn btn-big">Посмотреть все базы</button></p>
+							<div class="form-group mt20">
+								<label class="form-label" for="input-phone">Добавить номер к списку получателей</label>
+								<div class="columns">
+									<div class="column col-7">
+										<input class="form-input" type="text" id="input-phone" placeholder="+_ (___) ___-__-__">
+									</div>
+									<div class="column co-5">
+										<button class="btn btn-link i-newnumb">Добавить ещё номер</button>
+									</div>
+								</div>
+								<button class="btn btn-link i-stop">Выбрать стоп-базу для этой рассылки</button>
+								<i class="fa fa-question-circle-o text-grey"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="whitebox">
+					<h2>Чтобы разослать СМС, пополните баланс минимум на <strong class="rubs">89 567</strong></h2>
+					<p>Расчет стоимости выполнен по самому строгому сценарию.</p>
+					<p>К сожалению, точную стоимость мы узнаем только при отправке.</p>
+					<p>
+						<button class="btn btn-primary">Пополнить баланс картой</button>
+						<button class="btn btn-primary">Получить счет</button>
+					</p>
+				</div>
+
+				<div class="whitebox fullwidth">
+					<div class="rowbox fleks">
+						<div class="fleks-col -one">
+							<h4>Рассылка по <var>2</var> базам</h4>
+							<p><var>2</var> СМС в <var>1</var> сообщении</p>
+							<p><var>11 700</var> номеров на <var class="rubs">81 900</var></p>
+						</div>
+						<div class="fleks-col -two">
+							<p>
+								<button class="btn btn-primary -yellow">Контрольная СМС (<var class="rubs">7</var>)</button>
+								<button class="btn btn-yellow">Отправить без проверки</button>
+							</p>
+						</div>
+						<div class="fleks-col -three">
+							<p><button class="btn btn-link clean">Сохранить как шаблон</button></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+</div>
+
+
+<script src="assets/jquery/jquery-2.2.2.min.js"></script>
+<!--<script src="assets/bootstrap337/js/bootstrap.min.js"></script>-->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

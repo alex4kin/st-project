@@ -1,0 +1,76 @@
+// Mixin
+@mixin font-regular {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+}
+@mixin font-xbold {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+}
+@mixin proxima-regular {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 300;
+}
+@mixin proxima-light {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: 300;
+}
+@mixin proxima-semibold {
+  font-family: "Proxima Nova Sb", sans-serif;
+  font-weight: 600;
+}
+@mixin proxima-extra {
+  font-family: "Proxima Nova Th", sans-serif;
+  font-weight: 800;
+}
+@mixin proxima-black {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-weight: 900;
+}
+@mixin fontawesome {
+  font-family: "FontAwesome", sans-serif;
+}
+@mixin mobirise {
+  font-family: 'MobiriseIcons', sans-serif;
+}
+@mixin yellow-gradient {
+  background: #ffde8b;
+  background: -moz-linear-gradient(top, #ffde8b 0%, #ffb906 100%);
+  background: -webkit-linear-gradient(top, #ffde8b 0%,#ffb906 100%);
+  background: linear-gradient(to bottom, #ffde8b 0%,#ffb906 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde8b', endColorstr='#ffb906',GradientType=0 );
+}
+@mixin borderRadius($radius: 4px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin boxShadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
+@mixin transition($sec, $color, $method: ease-in-out) {
+  -moz-transition: $sec $color $method;
+  -webkit-transition: $sec $color $method;
+  transition: $sec $color $method;
+}
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin group {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}

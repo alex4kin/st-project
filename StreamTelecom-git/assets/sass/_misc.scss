@@ -1,0 +1,74 @@
+/* ==== Misc ==== */
+p:last-child,
+p:last-child .btn {
+  margin-bottom: 0;
+}
+.no {
+  display: none !important;
+}
+.nomb {
+  margin-bottom: 0 !important;
+}
+.nopb {
+  padding-bottom: 0 !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mark,
+mark {
+  padding: 2px;
+  background-color: #e5f5fc;
+}
+::-moz-selection {
+  background: #afd3e3;
+}
+::selection {
+  background: #afd3e3;
+}
+*:focus {
+  outline: none !important;
+  outline-offset: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+/* Placeholder text color */
+::-webkit-input-placeholder {
+  color: #cccccc;
+}
+::-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #cccccc;
+}
+/* ==== Clearfix ==== */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}

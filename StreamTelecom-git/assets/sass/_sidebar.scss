@@ -1,0 +1,82 @@
+.sidebar {
+  color: #ffffff;
+
+  a {
+    color: white;
+  }
+
+  .menu-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .menu-link {
+      margin: 6px 0;
+      padding: 0;
+
+      &.sms a {
+        background-image: url("#{$img}/icons/menu-sms.png");
+      }
+      &.mail a {
+        background-image: url("#{$img}/icons/menu-email.png");
+      }
+      &.viber a {
+        background-image: url("#{$img}/icons/menu-viber.png");
+      }
+      &.respond a {
+        background-image: url("#{$img}/icons/menu-respoders.png");
+      }
+      &.hlr a {
+        background-image: url("#{$img}/icons/menu-hlr.png");
+      }
+      &.subscr a {
+        background-image: url("#{$img}/icons/menu-podp.png");
+      }
+      &.inbox a {
+        background-image: url("#{$img}/icons/menu-inbox.png");
+      }
+      &.base a {
+        background-image: url("#{$img}/icons/menu-base.png");
+      }
+      &.stat a {
+        background-image: url("#{$img}/icons/menu-stat.png");
+      }
+    }
+
+    .menu-link {
+
+      a {
+        @include proxima-light;
+        display: block;
+        background: no-repeat 0 50%;
+        line-height: 1;
+        padding: 9px 0 9px 40px;
+        color: rgba(255, 255, 255, 1);
+        -moz-transition: color ease-in-out .2s;
+        -webkit-transition: color ease-in-out .2s;
+        transition: color ease-in-out .2s;
+        opacity: .5;
+      }
+
+      & a:hover,
+      & a:focus,
+      &.active a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        opacity: 1;
+      }
+    }
+
+    &.menu-homepage a {
+      opacity: 1;
+    }
+  }
+
+  .accordion {
+
+  }
+}
+

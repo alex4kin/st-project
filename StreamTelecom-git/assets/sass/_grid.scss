@@ -1,0 +1,103 @@
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &.topic {
+    padding: 0;
+  }
+
+  &.grid-xl {
+    max-width: 1260px;
+  }
+}
+.columns {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  > .column {
+    padding: 0 10px;
+  }
+}
+.columns.grid-common {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  > .column {
+    padding: 0 10px;
+
+    &.onside {
+      background-color: $bg-blighter;
+    }
+  }
+
+  > .column .wrapper {
+    margin: 0 -10px;
+    padding: 0;
+
+    .sidebar {
+      background-color: $bg-black;
+      padding: 25px 10px 10px 12px;
+
+      & + .sidebar {
+        background-color: transparent;
+        padding-top: 14px;
+      }
+    }
+
+    /*.sidebar + .sidebar {
+       background-color: transparent;
+       padding-top: 0;
+    }*/
+
+    &.contenido {
+      padding: 25px 20px 20px 20px;
+      background-color: $bg-grey;
+
+      *:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+.leftboxer {
+  width: 225px;
+  float: left;
+}
+.rightboxer {
+  display: block;
+  margin: 0 0 0 225px;
+}
+
+main {
+  margin-right: -10px;
+  margin-left: -10px;
+  background-color: $bg-grey;
+  @include group;
+
+  .sidebox {
+    background-color: $bg-blighter;
+    min-height: 450px;
+
+    .sidebar {
+      background-color: $bg-black;
+      padding: 25px 10px 10px 25px;
+
+      & + .sidebar {
+        background-color: transparent;
+        padding-top: 14px;
+      }
+    }
+  }
+
+  .mainbox {
+    min-height: 450px;
+    position: relative;
+
+    > .contenido {
+      margin: 0;
+      padding: 80px 12%;
+    }
+  }
+}
