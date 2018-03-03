@@ -16,8 +16,8 @@ $(function () {
    });
 
    /* Replace all SVG images with inline SVG */
-   // "img.svg" img[src$=".svg"]
-   jQuery('img.svg').each(function () {
+   // 'img.svg' 'img[src$=".svg"]'
+   jQuery('img[src$=".svg"]').each(function () {
       var $img = jQuery(this);
       var imgID = $img.attr('id');
       var imgClass = $img.attr('class');

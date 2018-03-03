@@ -176,6 +176,10 @@ body {
 
 .form-group {
 
+  & + .form-group {
+    margin-top: 15px;
+  }
+
   label {
     @include proxima-semibold;
     font-size: 14px;
@@ -196,6 +200,7 @@ body {
     @include proxima-regular;
     font-size: 16px;
     color: $grey25;
+    border-color: $border-color;
     /*opacity: .4;*/
     padding: 20px 10px;
     margin: 5px 0;
@@ -220,6 +225,7 @@ body {
 
   .form-checkbox {
     padding-left: 20px;
+    @include proxima-regular;
 
     .form-icon {
       width: 14px;
@@ -232,8 +238,8 @@ body {
       border: 1px solid white;
       @include boxShadow(0 0 1px);
       @include borderRadius(2px);
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
       left: 3px;
       top: 7px;
       -webkit-transform: rotate(0deg);
@@ -260,27 +266,8 @@ body {
     }
   }
 
-  .form-select {
-    position: relative;
-    font-size: 14px;
-    line-height: 1;
-    @include proxima-regular;
-    height: auto;
-    padding: 12px 22px 12px 10px;
-    margin: 5px 0;
-    @include borderRadius(4px);
-    width: 30%;
-    min-width: 225px;
-    display: block;
-    cursor: pointer;
-  }
   .twocols-column .form-select {
-    width: 100%;
-  }
-  .form-select:not([multiple]):not([size]) {
-    /*background-size: 12px 12px;*/
-    background: url("../img/angle-down-16x10.png") no-repeat 97% 50%;
-    padding-right: 22px;
+    width: 100% !important;
   }
 
   cite {
@@ -345,6 +332,61 @@ body {
   }
 }
 
+.subgroup,
+.simplebox.subgroup {
+  margin-top: 0;
+  padding-left: 1.4em;
+}
+
+.input-group {
+
+  label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-input {
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #252525;
+    padding: 20px 10px;
+    margin: 5px 0;
+    @include borderRadius(4px);
+  }
+
+  &.douplet {
+    display: inline-block;
+    width: auto;
+
+    label {
+      display: inline-block;
+      width: 150px;
+      padding: 8px 10px;
+      border: 1px solid $border-color;
+
+      input[type=time] {
+        border-color: transparent;
+        font-size: 14px;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+
+    label:first-of-type {
+      @include borderRadius(4px 0 0 4px);
+    }
+    label:last-of-type {
+      @include borderRadius(0 4px 4px 0);
+      border-left: none;
+      margin-left: -4px;
+    }
+  }
+}
+
 .btn {
   @include proxima-regular;
   font-size: 14px;
@@ -389,8 +431,6 @@ body {
       color: $text-color;
     }
   }
-
-
 }
 
 .btn.btn-link {
@@ -558,6 +598,19 @@ body {
 
 p > .btn {
   margin-left: 0;
+}
+
+.prompt {
+  display: block;
+  font-size: 12px !important;
+  margin: 15px 0 0 0;
+  padding: 0 0 0 9px;
+  border-left: 2px solid $red;
+
+  & + .prompt {
+    margin-top: 0;
+    padding-top: 15px;
+  }
 }
 
 .st-panel {

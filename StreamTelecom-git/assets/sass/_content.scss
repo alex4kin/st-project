@@ -20,6 +20,11 @@
     margin-top: 0;
   }
 
+  .simplebox {
+    margin: 20px 0;
+    padding: 15px;
+  }
+
   .whitebox {
     display: block;
     margin: 20px 0;
@@ -30,7 +35,7 @@
     @include borderRadius(4px);
 
     &.fullwidth {
-      margin: 20px -15.5% 0 -15.5%;
+      margin: 20px -9% 0 -9%;
       padding: 20px 10px;
       @include borderRadius(0);
 
@@ -367,6 +372,11 @@
     }
   }
 
+  .subgroup,
+  .simplebox.subgroup {
+    margin-top: 0;
+    padding-left: 1.4em;
+  }
 }
 .herobox {
   position: relative;
@@ -396,10 +406,13 @@
   &.hb-viber {
     background: url("#{$img}/lc-bg-4.png") no-repeat 50% 50%;
   }
+  &.hb-profile {
+    background: url("#{$img}/lc-bg-7.png") no-repeat 50% 50%;
+  }
 
   h1 {
     margin: 0;
-    padding: 0 12%;
+    padding: 0 8%;
     line-height: 1.1;
     color: #ffffff;
     width: 100%;

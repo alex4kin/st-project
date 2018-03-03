@@ -6,6 +6,9 @@ p:last-child .btn {
 .no {
   display: none !important;
 }
+.nomt {
+  margin-top: 0 !important;
+}
 .nomb {
   margin-bottom: 0 !important;
 }
@@ -14,6 +17,15 @@ p:last-child .btn {
 }
 .mt20 {
   margin-top: 20px !important;
+}
+.pt15 {
+  padding-top: 15px !important;
+}
+.pt20 {
+  padding-top: 20px !important;
+}
+.pl1em  {
+  padding-left: 1em;
 }
 .mark,
 mark {
@@ -71,4 +83,22 @@ form {
 }
 .clearfix:after {
   clear: both;
+}
+
+.form-select,
+.form-select:not([multiple]):not([size]) {
+  background: url("../img/angle-down-16x10.png") no-repeat 95% 50%;
+  position: relative;
+  font-size: 14px;
+  line-height: 1;
+  @include proxima-regular;
+  height: auto;
+  padding: 13px 22px 13px 10px;
+  margin: 5px 0;
+  @include borderRadius(4px);
+  width: auto;
+  min-width: 225px;
+  display: block;
+  cursor: pointer;
+  border-color: $border-color;
 }
