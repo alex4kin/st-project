@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- язык ru -->
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>HLR</title>
@@ -8,7 +9,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/css/spook.css"/>
 	<link rel="stylesheet" href="assets/css/style.css"/>
-	<script src="assets/js/modernizr-custom.js" type="javascript"></script>
+	<!-- стандартный type  -->
+	<script src="assets/js/modernizr-custom.js" type="text/javascript"></script>
+
 </head>
 <body>
 
@@ -19,13 +22,18 @@
 		</div>
 		<div class="userbox rightboxer">
 			<div class="phones">
-				<span>+7 (812) 123 45 67<dfn>Санкт-Петербург</dfn></span>
-				<span>8 (800) 123 45 67<dfn>Россия</dfn></span>
+				<!-- телефон отделил бы тегом явно, возможно добавив семантики немного и форматирования  -->
+				<span><a href="tel:+78121234567">+7 812 123-45-67</a><dfn>Санкт-Петербург</dfn></span>
+				<span><a href="tel:88001234567">8 800 123-45-67</a><dfn>Россия</dfn></span>
 			</div>
 			<div class="usermenu">
+				<!-- если это usermenu и в нём может быть много пунктов, то нужно показать, как будет выглядеть выпадайка с несколькими пунктами; или же fa-angle-down там не нужен -->
 				<span>
-					<img class="mbri-user" src="images/user.jpg" alt="user">
-					Константин
+					<!-- если лого выше в svg, то может быть есть смысл позаботиться и намекнуть,
+						как поддерживать ретину в фотках профиля, которые будут загружаться в джипег-->
+					<img class="mbri-user" src="images/user.jpg" alt="user" />
+					<!-- добавил спан и всё сломалось! так нельзя: добавление любого стандартного тега без класса/дива не должно приводить к изменению функционала или результирующей картинки, а должно давать предсказуемое поведение -->
+					<span>Super Mega International Inc.</span>
 				</span>
 				<i class="fa fa-angle-down"></i>
 			</div>
@@ -43,6 +51,7 @@
 		<div class="sidebox leftboxer">
 			<div class="sidebar">
 				<ul class="menu-links">
+					<!-- кто отвечает за дизайн? при таких цветах ссылки выглядят выключенными, а не просто неактивными -->
 					<li class="menu-link respond"><a href="#">Рассылки</a></li>
 					<li class="menu-link sms"><a href="#">СМС</a></li>
 					<li class="menu-link hlr active"><a href="#">Проверка HLR</a></li>
@@ -53,6 +62,7 @@
 				</ul>
 			</div>
 			<div class="sidebar">
+				<!-- кто отвечает за дизайн? серое на сером, очень низкая контрастность + тонкий шрифт, так нельзя -->
 				<ul class="menu-links">
 					<li class="menu-link base"><a href="#">Базы номеров</a></li>
 					<li class="menu-link stat"><a href="#">Статистика</a></li>
@@ -61,17 +71,25 @@
 		</div>
 		<div class="mainbox rightboxer">
 			<div class="herobox hb-hlr">
+				<!-- состояния типа ховера планируются? -->
 				<h1>Проверка HLR<button class="btn btn-yellow btn-resp">Добавить базу</button></h1>
 			</div>
 			<div class="filter">
 				<div class="filter-content">
 					<div class="fbox">
+						<!-- вот я попробовал расширить и сделал несколько сортировок, это ожидаемый результат? какая сейчас включена непонятно -->
 						Сортировка <button class="btn btn-link clean">по дате добавления</button>
+						<button class="btn btn-link clean">по количеству номеров</button>
+						<button class="btn btn-link clean">по ещё чему-нибудь</button>
+						<button class="btn btn-link clean">и ещё один контрольный вариант</button>
+						<button class="btn btn-link clean">разъехалось</button>
 					</div>
 					<div class="fbox">
+						<!-- если есть управление пагинатором, то гда сам пагинатор?  -->
 						На странице <button class="btn btn-link clean">20 баз</button>
 					</div>
 					<div class="fbox">
+						<!-- что тут будет, пока не развораивается в поисковое поле? -->
 						<i class="fa fa-search"></i>
 					</div>
 				</div>
@@ -79,6 +97,7 @@
 			<div class="contenido standardpage">
 				<div class="whitebox">
 					<h2>
+						<!-- серьёзно так в протототипе, заголовое "Рабочие базы — 120"? :( Владивосток 2000 -->
 						Рабочие базы &mdash; <span>120</span>
 					</h2>
 					<div class="wb-body">
@@ -91,12 +110,15 @@
 											<i class="form-icon"></i>
 										</label>
 										<label class="form-label two">
+											<!-- что прячет этот шеврон тут? Может быть Название? -->
 											<span>База <i class="fa fa-angle-down"></i></span>
 										</label>
 										<label class="form-label three">
+											<!-- вероятно, тут предполагалась сортировка, как показать включенную по возрастанию/убыванию? если это сортировка, то зачем переключалка вверху, а дядька в Киеве? Выключка колонки с числами по центру — плохо для визуального сравнения -->
 											<span>Номеров <i class="fa fa-exchange"></i></span>
 										</label>
 										<label class="form-label four">
+											<!-- а здесь выключка слева, тоже плохо — это ж деньги, справа должно быть -->
 											<span>Стоимость <i class="fa fa-exchange"></i></span>
 										</label>
 										<label class="form-label five">
@@ -113,7 +135,7 @@
 											<span>Какой-то длинный текст, какой-то длинный текст</span>
 										</label>
 										<label class="form-label three">
-											<span>700</span>
+											<span>70000</span>
 										</label>
 										<label class="form-label four">
 											<span class="text-grey">Неизвестно</span>
@@ -121,6 +143,7 @@
 										</label>
 										<label class="form-label five">
 											<span class="text-grey">Не проверялось</span>
+											<!-- сверху символ рубля включали <i class="fa fa-rub"></i> а тут уже var class rubs -->
 											<button class="btn btn-link clean">Проверить за <var class="rubs">350</var></button>
 										</label>
 										<label class="form-label six">
@@ -140,7 +163,8 @@
 											<span>150</span>
 										</label>
 										<label class="form-label four">
-											<span class="rubs">1 500</span>
+											<!-- тут стал уже третий вариант — спан класс рубс и вар вместе -->
+											<span class="rubs">1 5000</span>
 											<span class="text-grey"><var class="rubs">10</var>/мес</span>
 										</label>
 										<label class="form-label five">
@@ -170,17 +194,19 @@
 											</span>
 										</label>
 										<label class="form-label three">
-											<span>620</span>
+											<span>6200</span>
 										</label>
 										<label class="form-label four">
-											<span class="rubs">4 900</span>
+											<span class="rubs">490</span>
 											<span class="text-grey"><var class="rubs">7</var>/мес</span>
 										</label>
 										<label class="form-label five">
 											<span class="text-orange">Проверяется</span>
+											<!-- это число что - дата или время или что? без бутылки не понять -->
 											<span class="text-grey">00.09.23</span>
 										</label>
 										<label class="form-label six">
+											<!-- тут пришли иконки в ПНГ. От них никак не избавиться? Может быть всё в СВГ сразу, чтоб на ретинах было хорошо? Или тогда уж всё у font awesome брать -->
 											<img class="more-dots" src="assets/img/icons/more.png" alt="more">
 										</label>
 									</div>
